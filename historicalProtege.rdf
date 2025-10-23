@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpoch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpoch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpochEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpochEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#livedInEpoch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#livedInEpoch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#occurredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#occurredIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#participatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#participatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#born -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#born">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#continent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#continent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#period -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#period">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Christianization_of_Rus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Christianization_of_Rus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+        <untitled-ontology-7:occurredIn rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Kievan_Rus"/>
+        <untitled-ontology-7:name>Christianization of Rus</untitled-ontology-7:name>
+        <untitled-ontology-7:year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">988</untitled-ontology-7:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+        <untitled-ontology-7:belongsToEpoch rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Modern_Era"/>
+        <untitled-ontology-7:continent>Europe</untitled-ontology-7:continent>
+        <untitled-ontology-7:name>France</untitled-ontology-7:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#French_Revolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#French_Revolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+        <untitled-ontology-7:occurredIn rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#France"/>
+        <untitled-ontology-7:name>French Revolution</untitled-ontology-7:name>
+        <untitled-ontology-7:year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1789</untitled-ontology-7:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Kievan_Rus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Kievan_Rus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Country"/>
+        <untitled-ontology-7:belongsToEpoch rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Middle_Ages"/>
+        <untitled-ontology-7:continent>Eurasia</untitled-ontology-7:continent>
+        <untitled-ontology-7:name>KievanRus</untitled-ontology-7:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Middle_Ages -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Middle_Ages">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+        <untitled-ontology-7:name>Middle Ages</untitled-ontology-7:name>
+        <untitled-ontology-7:period>5th–15th centuries</untitled-ontology-7:period>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Modern_Era -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Modern_Era">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Epoch"/>
+        <untitled-ontology-7:name>Modern Era</untitled-ontology-7:name>
+        <untitled-ontology-7:period>15th–19th centuries</untitled-ontology-7:period>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Napoleon_Bonaparte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Napoleon_Bonaparte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Napoleon_Bonaparte_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Napoleon_Bonaparte_">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+        <untitled-ontology-7:participatedIn rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#French_Revolution"/>
+        <untitled-ontology-7:born rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1769</untitled-ontology-7:born>
+        <untitled-ontology-7:name>Napoleon Bonaparte</untitled-ontology-7:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Prince_Vladimir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Prince_Vladimir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+        <untitled-ontology-7:participatedIn rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Christianization_of_Rus"/>
+        <untitled-ontology-7:born rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">958</untitled-ontology-7:born>
+        <untitled-ontology-7:name>Prince Vladimir</untitled-ontology-7:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/ep">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Event"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#occurredIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpoch"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/ep"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpochEvent"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/ep"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#participatedIn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#belongsToEpochEvent"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/e"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/ep"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7#livedInEpoch"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/79378/ontologies/2025/9/untitled-ontology-7/ep"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
